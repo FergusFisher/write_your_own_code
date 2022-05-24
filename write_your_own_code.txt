@@ -1,0 +1,11 @@
+print('Write your own code, bucks! Enter \"run!\" to run.')
+
+full_code_list = []
+while True:
+    new_line = input()
+    if new_line == 'run!':
+        break
+    full_code_list.append(new_line)
+print('\nOutput:\n')
+k = ('\n'.join(full_code_list))
+exec(k)
